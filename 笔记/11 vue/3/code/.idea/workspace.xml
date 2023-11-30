@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51fc8ca6-c381-4397-9803-98c8a28a6bf5" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/../../2/code/07联系es6语法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10 nodejs/node/nodejs环境配置.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1/code/02.v-cloak的学习.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1/code/02.v-cloak的学习.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1/code/04.事件修饰符.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1/code/04.事件修饰符.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1/code/05.v-model指令的学习.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1/code/05.v-model指令的学习.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1/code/07.vue中样式-class.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1/code/07.vue中样式-class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1/code/08.vue中样式-style.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1/code/08.vue中样式-style.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1/code/13.v-for循环中key属性的使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1/code/13.v-for循环中key属性的使用.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1/code/14.v-if和v-show的使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1/code/14.v-if和v-show的使用.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2/code/02.品牌列表案例2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2/code/02.品牌列表案例2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2/code/联系es6语法.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.动画-使用过渡类名实现动画.html" beforeDir="false" afterPath="$PROJECT_DIR$/03.动画-使用过渡类名实现动画.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.动画-修改v-前缀.html" beforeDir="false" afterPath="$PROJECT_DIR$/04.动画-修改v-前缀.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.动画-使用第三方类实现动画.html" beforeDir="false" afterPath="$PROJECT_DIR$/05.动画-使用第三方类实现动画.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06.动画-使用钩子函数模拟小球半场动画.html" beforeDir="false" afterPath="$PROJECT_DIR$/06.动画-使用钩子函数模拟小球半场动画.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07.动画-列表动画.html" beforeDir="false" afterPath="$PROJECT_DIR$/07.动画-列表动画.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5/code/04.名称案例-方式2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../5/code/04.名称案例-方式2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7/02.vue-cms" beforeDir="false" afterPath="$PROJECT_DIR$/../../7/02.vue-cms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../8/vue-cms" beforeDir="false" afterPath="$PROJECT_DIR$/../../8/vue-cms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/directive定义全局的指令使用方法.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/app.Vue的页面.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/index页面Vue1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/index页面注意.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/login.Vue的页面.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/main.js的第三种配置增加了Vue1和export的方法.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/main.js的第二种配置增加了bable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/main.js的第四种配置增加了VueRouter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/main.js的配置.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/router.js的配置.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/webpackconfig.js的配置和devServer的第二种使用方式.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/webpackconfig.js配置的第三种方式增加了vue1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/webpackconfig.js配置的第二种方式增加了配置URLloader和babel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/webpack基本使用方式.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/webpack安装方式.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/使用render函数渲染组件和页面中渲染组件的区别.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/组件中使用style元素需要设置lang和scoped属性.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/webpack/设置devserver的第一种方式再package.json中.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/字符串新方法padstart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/定义私有过滤器的使用方法filters.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/数组中filter的使用方法+字符串新方法includes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/数组中findIndex的使用方法.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/数组中foreach方法.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/数组中some的使用方法.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/生命周期函数.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/目前学习的Vue标签(元素).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/第4天-父组件向子组件传值和data与props的区别.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/第4天-父组件把方法传递给子组件,并且子组件通过方法向父组件传值.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/第四天ref获取dom元素和组件的引用.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件-私有组件的使用方法和目前为止Vue实例中的所有属性.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件中的data使用.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件中的methods使用方法.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件切换时的动画.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件实现切换的方式1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件实现切换的方式2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件的使用方式1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件的使用方式2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/组件/组件的使用方式3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/computed监听数据变化.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/methods监听数据变化.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/watch监听数据变化.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/watch监听路由地址的改变.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/第4天-命名视图一个地址中放多个组件.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/第4天路由的基本使用.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/第四天路由的嵌套使用children属性.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/路由传参params.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/路由的使用/路由传参query.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/过滤器的实际应用.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vue资料/配置路径拼接和emulateJson选项.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day10/代码/vue-cms" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/代码/vue-cms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day10/代码/vuex-study/src/components/counter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/代码/vuex-study/src/components/counter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day10/代码/vuex-study/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../day10/代码/vuex-study/src/main.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1194493997">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="43" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="43" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="16527788">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="9" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03.动画-使用过渡类名实现动画.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04.动画-修改v-前缀.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1825">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05.动画-使用第三方类实现动画.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06.动画-使用钩子函数模拟小球半场动画.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1725">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/11.组件-组件中的data和methods.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/12.组件-why components data must be a function.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/13.组件切换-方式1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14.组件切换-方式2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/15.组件切换-切换动画.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/07.动画-列表动画.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/01.vue-resource改造品牌列表案例.html" />
+        <option value="$PROJECT_DIR$/02.动画-不使用动画.html" />
+        <option value="$PROJECT_DIR$/03.动画-使用过渡类名实现动画.html" />
+        <option value="$PROJECT_DIR$/04.动画-修改v-前缀.html" />
+        <option value="$PROJECT_DIR$/05.动画-使用第三方类实现动画.html" />
+        <option value="$PROJECT_DIR$/06.动画-使用钩子函数模拟小球半场动画.html" />
+        <option value="$PROJECT_DIR$/07.动画-列表动画.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="496" />
+    <option name="y" value="180" />
+    <option name="width" value="1894" />
+    <option name="height" value="1372" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51fc8ca6-c381-4397-9803-98c8a28a6bf5" name="默认更改列表" comment="" />
+      <created>1550557712959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550557712959</updated>
+      <workItem from="1550557714226" duration="12028000" />
+      <workItem from="1553087428582" duration="2470000" />
+      <workItem from="1553091599666" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14528000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1293" height="783" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.102625296" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/01.vue-resource改造品牌列表案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1437">
+          <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.动画-不使用动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09.组件-创建组件的方式2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08.组件-创建组件的方式1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10.组件-创建组件的方式3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1475">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03.动画-使用过渡类名实现动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.动画-修改v-前缀.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1825">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05.动画-使用第三方类实现动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.动画-使用钩子函数模拟小球半场动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11.组件-组件中的data和methods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12.组件-why components data must be a function.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13.组件切换-方式1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14.组件切换-方式2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15.组件切换-切换动画.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07.动画-列表动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

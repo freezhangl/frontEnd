@@ -1,0 +1,75 @@
+<!--classification.wxml-->
+<view class='classification'>
+  <view class="menu">
+      <scroll-view scroll-x="true" class="top-nav">
+          <view bindtap="toCar" class="top-btn {{car}}">汽车</view>
+          <view bindtap="toFinancial" class="top-btn {{financial}}">金融</view>
+          <view bindtap="toProperty" class="top-btn {{property}}">房产</view>
+          <view bindtap="toRetailstore" class="top-btn {{retailstore}}">零售卖场</view>
+          <view bindtap="toEntertainment" class="top-btn {{entertainment}}">娱乐休闲</view>
+          <view bindtap="toTourism" class="top-btn {{tourism}}">旅游</view>
+          <view bindtap="toLuxury" class="top-btn {{luxury}}">奢侈品</view>
+          <view bindtap="toInternetservice" class="top-btn {{internetservice}}">网络服务</view>
+          <view bindtap="toBusinessservice" class="top-btn {{businessservice}}">商业服务</view>
+          <view bindtap="toDigitalElectronics" class="top-btn {{digitalelectronics}}">数码电子</view>
+          <!-- <view bindtap="toAppliancestore" class="top-btn {{appliancestore}}">家电卖场</view> -->
+          <!-- <view bindtap="toAlcoholindustry" class="top-btn {{alcoholindustry}}">酒类行业</view> -->
+          <view bindtap="toFoodindustry" class="top-btn {{foodindustry}}">餐饮行业</view>
+          <view bindtap="toEducationtraining" class="top-btn {{educationtraining}}">教育培训</view>
+          <view bindtap="toDecorativematerials" class="top-btn {{decorativematerials}}">装饰建材</view>
+          <view bindtap="toHealthcare" class="top-btn {{healthcare}}">卫生医疗</view>
+      </scroll-view>
+  </view>
+
+  <view class='secondClass' wx:if='{{existClass}}'>
+    <view class='secondText'>
+      <view class='line'></view>
+      <text>  　热门行业  　</text>
+      <view class='line'></view>
+    </view>
+    <view class='secondImage'>
+      <view class='seconImagefirst'>
+        <view class='secondImage-1' wx:for='{{items}}' wx:for-index="id" wx:for-item="item" wx:key='secondImage-1' wx:if="{{id <= 2}}" data-id='{{id}}' bindtap="secondList">
+          <image mode="widthFix" src='{{items[id].icon}}'></image>
+          <text>{{items[id].name}}</text>
+        </view>
+      </view>
+      <view class='seconImagesecond'>
+        <view class='secondImage-2' wx:for='{{items}}' wx:for-index="id" wx:for-item="item" wx:key='secondImage-2'  wx:if="{{id > 2}}" data-id='{{id}}' bindtap="secondList">
+          <image mode="widthFix" src='{{items[id].icon}}'></image>
+          <text>{{items[id].name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:for='{{lists}}' wx:for-index="id" wx:for-item="list" wx:key='secondImage-1'  data-id='{{id}}' bindtap="listClick" class='secondList' wx:if='{{existList}}'>
+    <view class='secondTitle'>
+      <view class='secondTitle-1'>{{lists[id].category_secondary_name}}</view>
+      <text class='secondTitle-2'>{{lists[id].weixin_name}}</text>
+    </view>
+    <view class='secondBottom'>
+      <view class='everyone'>
+        <image src="https://lianzongai.com/weixin/material/xianshang.png" mode="widthFix"></image>
+        <text>自媒体</text>
+        <text class='tiaoshu'>{{lists[id].weixins_count}}</text>
+        <text>条</text>
+      </view>
+      <view class='everyone'>
+        <image src="https://lianzongai.com/weixin/material/xianxia.png" mode="widthFix"></image>
+        <text>线上</text>
+        <text class='tiaoshu'>{{lists[id].websites_count}}</text>
+        <text>条</text>
+      </view>
+      <view class='everyone'>
+        <image src="https://lianzongai.com/weixin/material/zimeiti.png" mode="widthFix"></image>
+        <text>线下</text>
+        <text class='tiaoshu'>{{lists[id].offlines_count}}</text>
+        <text>条</text>
+      </view>
+    </view>
+  </view>
+
+
+  <image src='https://lianzongai.com/weixin/material/no.png' class='no' mode="widthFix" wx:if="{{existImage}}"></image>
+</view>

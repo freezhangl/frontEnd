@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="search">
+        <image src="../../images/plus.png"></image>
+    </view>
+    <input type="text" placeholder="anything here.."/>
+    <view class="todos"></view>
+    <view class="footer"></view>
+    <icon type="circle"></icon>
+</view>

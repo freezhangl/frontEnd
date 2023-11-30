@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
+}
+
+html {font-size: 625%; }
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait) {
+html {font-size: 1600%; }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+html {font-size: 1600%; }
+}
+
+@media screen and (min-width:360px) and (max-width:374px) and (orientation:portrait) {
+    html { font-size: 703%; }
+}
+@media screen and (min-width:375px) and (max-width:383px) and (orientation:portrait) {
+    html { font-size: 732.4%; }
+}
+@media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {
+    html { font-size: 750%; }
+}
+@media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {
+    html { font-size: 781.25%; }
+}
+@media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait){
+    html { font-size: 808.6%; }
+}
+@media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait){
+    html { font-size: 843.75%; }
+}
+
+html, body{
+    /*height: 100%;*/
+    /*position: relative;*/
+    /*margin: 0;*/
+    /*overflow: hidden;*/
+    /*-webkit-user-select:none;*/
+    /*-webkit-tap-highlight-color: transparent;*/
+}
+
+/*@font-face*/
+/*{*/
+    /*font-family: ;*/
+    /*src: url('../img/');*/
+/*}*/
+
+
+.background{
+    width: 100%;
+    height: 100%;
+    background: url(../images/873771786241582138.jpg) no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    /*z-index: 1;*/
+    display: flex;
+    opacity: 1;
+    flex-direction:column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.begin{
+    position: absolute;
+    width: 1.3rem;
+    height: 0.3rem;
+    top: 80%;
+    z-index: 3;
+}
+
+.imgCon{
+    position: absolute;
+    width: 1.48rem;
+    height: 1.48rem;
+    top: 58%;
+    z-index: 13;
+}
+.buttonTop1{
+    position: absolute;
+    width: 0.85rem;
+    height:0.85rem;
+    overflow: hidden;
+    z-index: 14;
+    top: 21%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.buttonTop1 img{
+    position: absolute;
+    width: 1.48rem;
+    height: 1.48rem;
+    z-index: 13;
+    left: 50%;
+    top: -36%;
+}
+.buttonTop2{
+    position: absolute;
+    width: 1.48rem;
+    height: 1.48rem;
+    z-index: 13;
+    border-radius: 50%;
+    background: rgba(0,0,0,.1);
+
+}
+.buttonTop3{
+    position: absolute;
+    width: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1.1rem;
+    top: 13%;
+    z-index: 13;
+    border-radius: 50%;
+    background: rgba(0,0,0,.15);
+}
+
+
+.photograph{
+    width: 100%;
+    height: 100%;
+    background: url(../images/WechatIMG43.jpeg) no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    display: flex;
+    flex-direction:column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+form{
+    position: absolute;
+    width: 1.93rem;
+    top: 61%;
+
+
+}
+form label{
+    display: block;
+    font-size: 14px;
+    color: #e3c092;
+    height: 0.4rem;
+}
+form label select{
+    height: .3rem;
+    width: 1.55rem;
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+    border: 0;
+    background: #e4d09e;
+    outline: none;
+    position: relative;
+}
+form label  option{
+    /*display: block;*/
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+    color: #e3c092;
+    height: 0.4rem;
+}
+form input{
+    height: .3rem;
+    width: 1.55rem;
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+    border: 0;
+    background: #e4d09e;
+    outline: none;
+
+}
+.buttonMiddle{
+    position: absolute;
+    width: 1.93rem;
+    /*top: 255%;*/
+    display: block;
+    z-index: 3;
+}
+
+
+

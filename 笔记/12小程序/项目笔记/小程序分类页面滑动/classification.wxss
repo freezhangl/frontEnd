@@ -1,0 +1,214 @@
+/**classification.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+} 
+
+.classification{
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.secondClass{
+  display: flex;
+  width: 100%;
+  margin-top: 90rpx;
+  /* height: 1244rpx; */
+  height: 944rpx;
+  flex-direction: column;
+}
+
+.secondClass .secondText{
+  position: relative;
+  display: flex;
+  margin-top: 90rpx;
+  justify-content:center;
+  align-items:center; 
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.secondClass .secondImage{
+  position: relative;
+  display: flex;
+  margin-top: 70rpx;
+  margin-left: -10rpx;
+  flex-direction: column;
+}
+
+.secondImage .seconImagefirst{
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.secondImage .seconImagesecond{
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.secondImage .secondImage-1{
+  position: relative;
+  display: flex;
+  width: 120rpx;
+  margin-left: 100rpx;
+  flex-direction: column;
+}
+
+.secondImage .secondImage-2{
+  position: relative;
+  display: flex;
+  margin-top: 70rpx;
+  width: 120rpx;
+  margin-left: 100rpx;
+  flex-direction: column;
+}
+
+.secondImage-1 image{
+  position: relative;
+  display: flex;
+  width: 120rpx;
+  height:auto;
+}
+
+.secondImage-1 text{
+  position: relative;
+  /* display: flex; */
+  width: 120rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.secondImage-2 image{
+  position: relative;
+  display: flex;
+  width: 120rpx;
+  height:auto;
+}
+
+.secondImage-2 text{
+  position: relative;
+  /* display: flex; */
+  width: 120rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.secondList{
+  display: flex;
+  margin-top: 100rpx;
+  margin-left: 25rpx;
+  margin-bottom: 10rpx;
+  width: 700rpx;
+  height: 220rpx;
+  box-shadow: 0rpx 0rpx 30rpx 5rpx #959595;
+  border-radius : 10rpx;
+  flex-direction: column;
+}
+
+.secondList .secondTitle-1{
+  width: 150rpx;
+  height: 45rpx;
+  background-color: #5669a9;
+  border-radius : 10rpx;
+  color: white;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 40rpx;
+
+}
+
+.secondList .secondTitle-2{
+  margin-left: 30rpx;
+  /* width: 482rpx; */
+  font-size: 30rpx;
+}
+
+.secondList image{
+  width: 40rpx;
+  margin-right: 10rpx;
+  height:auto;
+}
+
+.secondList .secondTitle{
+  position: relative;
+  display: flex;
+  margin-top: 35rpx;
+  margin-left: 80rpx;
+  width: 620rpx;
+  overflow: hidden;
+}
+
+.secondList .secondBottom{
+  position: relative;
+  display: flex;
+  font-size: 24rpx;
+  /* margin-left: 20rpx; */
+  margin-top: 55rpx;
+}
+
+.everyone{
+  margin-left: 35rpx;
+  align-items:center;
+}
+
+.everyone text{
+  position: relative;
+  bottom: 10rpx;
+}
+
+.tiaoshu{
+  color: red;
+}
+
+.line{
+    display: flex;
+    position: relative;
+    /* margin: 5rpx; */
+    width: 70rpx;
+    border-bottom: rgb(0, 0, 0) solid 2px;
+    /* padding: 50rpx; */
+}
+
+.no{
+  position: absolute;
+  left: 55rpx;
+  top: 352rpx;
+}
+
+.menu{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  color: white;
+  height: 80rpx;
+  /* border-bottom:#eee solid 1px; */
+  z-index: 100000
+}
+
+.top-nav{
+    white-space: nowrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top-btn{
+    display: inline-block;
+    /* padding: 22rpx; */
+    padding: 17rpx;
+    margin-top: 8rpx;
+    font-size: 32rpx;
+}
+
+.top-hoverd-btn{
+    color: #ffffff;
+    /* border-bottom: #bdb542 solid 1px; */
+    background-color: #5669a9;
+    border-radius:10rpx;
+    padding-top: 5rpx;
+    padding-bottom: 6rpx;
+}
