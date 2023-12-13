@@ -26,6 +26,7 @@ app.use(expressJWT({ secret: secretKey }).unless({ path: [/^\/api\//] }))
 app.post('/api/login', function (req, res) {
   // 将 req.body 请求体中的数据，转存为 userinfo 常量
   const userinfo = req.body
+  console.log(userinfo,'划分到')
   // 登录失败
   if (userinfo.username !== 'admin' || userinfo.password !== '000000') {
     return res.send({
@@ -39,7 +40,7 @@ app.post('/api/login', function (req, res) {
   // 参数2：加密的秘钥
   // 参数3：配置对象，可以配置当前 token 的有效期
   // 记住：千万不要把密码加密到 token 字符中
-  const tokenStr = jwt.sign({ username: userinfo.username }, secretKey, { expiresIn: '30s' })
+  const tokenStr = jwt.sign({ username: userinfo.username,password:userinfo.password }, secretKey, { expiresIn: '30s' })
   res.send({
     status: 200,
     message: '登录成功！',

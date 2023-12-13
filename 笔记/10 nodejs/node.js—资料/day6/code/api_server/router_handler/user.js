@@ -20,6 +20,7 @@ exports.regUser = (req, res) => {
       // return res.send({ status: 1, message: err.message })
       return res.cc(err)
     }
+    console.log(results,'范德萨放大')
     // 判断用户名是否被占用
     if (results.length > 0) {
       // return res.send({ status: 1, message: '用户名被占用，请更换其他用户名！' })
