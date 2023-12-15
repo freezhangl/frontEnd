@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 // 导入全局的配置文件
 const config = require('../config')
-
+// console.log(db,'见附件钢结构')
 // 注册新用户的处理函数
 exports.regUser = (req, res) => {
   // 获取客户端提交到服务器的用户信息
@@ -19,6 +19,8 @@ exports.regUser = (req, res) => {
   // 定义 SQL 语句，查询用户名是否被占用
   const sqlStr = 'select * from ev_users where username=?'
   db.query(sqlStr, userinfo.username, (err, results) => {
+    console.log(err,'飞得更高1')
+    console.log(results,'飞得更高2')
     // 执行 SQL 语句失败
     if (err) {
       // return res.send({ status: 1, message: err.message })
