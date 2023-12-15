@@ -16,7 +16,7 @@ app.use('/uploads', express.static('./uploads'))
 
 // 一定要在路由之前，封装 res.cc 函数
 app.use((req, res, next) => {
-  // status 默认值为 1，表示失败的情况
+  // status 默认值为 1，表示失败的情况 
   // err 的值，可能是一个错误对象，也可能是一个错误的描述字符串
   res.cc = function (err, status = 1) {
     res.send({
