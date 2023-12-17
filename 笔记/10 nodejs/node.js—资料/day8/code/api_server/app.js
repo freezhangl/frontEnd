@@ -2,7 +2,7 @@
 const express = require('express')
 // 创建服务器的实例对象
 const app = express()
-const joi = require('@hapi/joi')
+const joi = require('joi')
 
 // 导入并配置 cors 中间件
 const cors = require('cors')
@@ -31,10 +31,16 @@ app.use((req, res, next) => {
 const expressJWT = require('express-jwt')
 const config = require('./config')
 
-app.use(expressJWT({ secret: config.jwtSecretKey }).unless({ path: [/^\/api/] }))
+app.use(expressJWT({ secret: config.jwtSecretKey }).unless({ path: [/^\/api/,'/'] }))
 
 // 导入并使用用户路由模块
 const userRouter = require('./router/user')
+app.get('/',(req,res)=>{
+  res.send({
+    code:'1',
+    msg:'你好吗,我很好!'
+  })
+})
 app.use('/api', userRouter)
 // 导入并使用用户信息的路由模块
 const userinfoRouter = require('./router/userinfo')

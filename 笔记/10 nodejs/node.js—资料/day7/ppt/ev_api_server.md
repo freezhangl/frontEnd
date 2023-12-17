@@ -323,7 +323,7 @@ npm i @escook/express-joi
 3. 新建 `/schema/user.js` 用户信息验证规则模块，并初始化代码如下：
 
 ```js
-const joi = require('@hapi/joi')
+const joi = require('joi')
 
 /**
  * string() 值必须是字符串
@@ -380,7 +380,7 @@ module.exports = router
 5. 在 `app.js` 的全局错误级别中间件中，捕获验证失败的错误，并把验证失败的结果响应给客户端：
 
 ```js
-const joi = require('@hapi/joi')
+const joi = require('joi')
 
 // 错误中间件
 app.use(function (err, req, res, next) {
@@ -1078,7 +1078,7 @@ exports.addArticleCates = (req, res) => {
 
 ```js
 // 导入定义验证规则的模块
-const joi = require('@hapi/joi')
+const joi = require('joi')
 
 // 定义 分类名称 和 分类别名 的校验规则
 const name = joi.string().required()
@@ -1535,7 +1535,7 @@ exports.addArticle = (req, res) => {
 
 ```js
 // 导入定义验证规则的模块
-const joi = require('@hapi/joi')
+const joi = require('joi')
 
 // 定义 标题、分类Id、内容、发布状态 的验证规则
 const title = joi.string().required()

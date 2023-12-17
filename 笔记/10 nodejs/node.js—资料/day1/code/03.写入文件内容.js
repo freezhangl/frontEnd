@@ -5,7 +5,7 @@ const fs = require('fs')
 //    参数1：表示文件的存放路径
 //    参数2：表示要写入的内容
 //    参数3：回调函数
-fs.writeFile('./files/3.txt', 'ok123', function(err) {
+fs.writeFile('./files/3.txt', 'ok123啦啦啦', function(err) {
   // 2.1 如果文件写入成功，则 err 的值等于 null
   // 2.2 如果文件写入失败，则 err 的值等于一个 错误对象
   // console.log(err)
@@ -14,4 +14,10 @@ fs.writeFile('./files/3.txt', 'ok123', function(err) {
     return console.log('文件写入失败！' + err.message)
   }
   console.log('文件写入成功！')
+})
+// fs.writeFile('./files/2.txt','ni你好吗','utf-8',(err)=>{
+//   console.log(err,'简单介绍')
+// })
+fs.writeFileSync('./files/2.txt','ajfd',(err)=>{
+  console.log(err,'发广告')
 })
