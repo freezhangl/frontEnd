@@ -15,7 +15,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/static', express.static(__dirname + '/public'));
-
+// var bodyParser = require('body-parser');
+// app.use(bodyParser.json());
 //todo从别的地方引入begin
 const joi = require('joi')
 // 导入并配置 cors 中间件
