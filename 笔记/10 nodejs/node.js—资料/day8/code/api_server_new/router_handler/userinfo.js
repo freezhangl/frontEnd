@@ -5,8 +5,10 @@ const bcrypt = require('bcryptjs')
 
 // 获取用户基本信息的处理函数
 exports.getUserInfo = (req, res) => {
+  console.log(req,'发动机数据')
   // 定义查询用户信息的 SQL 语句
   const sql = `select id, username, nickname, email, user_pic from ev_users where id=?`
+  // const sql= ``
   // 调用 db.query() 执行 SQL 语句
   db.query(sql, req.user.id, (err, results) => {
     // 执行 SQL 语句失败
