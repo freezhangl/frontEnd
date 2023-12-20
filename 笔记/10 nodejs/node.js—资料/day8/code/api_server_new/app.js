@@ -5,26 +5,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use('/static', express.static(__dirname + '/public'));
-// var bodyParser = require('body-parser');
-// app.use(bodyParser.json());
-//todo从别的地方引入begin
-const joi = require('joi')
 // 导入并配置 cors 中间件
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json({limit: '50mb'}));
+
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 const cors = require('cors')
 app.use(cors())
-// 托管静态资源文件
-app.use('/uploads', express.static('./uploads'))
-
 // 一定要在路由之前，封装 res.cc 函数
 app.use((req, res, next) => {
   // status 默认值为 1，表示失败的情况
@@ -37,6 +25,23 @@ app.use((req, res, next) => {
   }
   next()
 })
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use('/static', express.static(__dirname + '/public'));
+
+//todo从别的地方引入begin
+const joi = require('joi')
+
+// 托管静态资源文件
+app.use('/uploads', express.static('./uploads'))
+
+
 // 一定要在路由之前配置解析 Token 的中间件
 const expressJWT = require('express-jwt')
 const config = require('./config')
@@ -56,7 +61,7 @@ const userinfoRouter = require('./router/userinfo')
 app.use('/my', userinfoRouter)
 // 导入并使用文章分类的路由模块
 const artCateRouter = require('./router/artcate')
-app.use('/my/article', artCateRouter)
+app.use('/my/cate', artCateRouter)
 // 导入并使用文章的路由模块
 const articleRouter = require('./router/article')
 app.use('/my/article', articleRouter)
@@ -78,7 +83,7 @@ app.use(function(err, req, res, next) {
     // 验证失败导致的错误
     if (err instanceof joi.ValidationError) return res.cc(err)
     // 身份认证失败后的错误
-    if (err.name === 'UnauthorizedError') return res.cc('身份认证失败！')
+    if (err.name === 'UnauthorizedError') return res.cc('token过期,身份认证失败！',2)
     // 未知的错误
     res.cc(err)
 });

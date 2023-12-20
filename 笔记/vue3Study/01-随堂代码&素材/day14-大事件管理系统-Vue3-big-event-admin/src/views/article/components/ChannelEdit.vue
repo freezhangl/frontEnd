@@ -4,11 +4,11 @@ import { artEditChannelService, artAddChannelService } from '@/api/article.js'
 const dialogVisible = ref(false)
 const formRef = ref()
 const formModel = ref({
-  cate_name: '',
-  cate_alias: ''
+  name: '',
+  alias: ''
 })
 const rules = {
-  cate_name: [
+  name: [
     { required: true, message: '请输入分类名称', trigger: 'blur' },
     {
       pattern: /^\S{1,10}$/,
@@ -16,7 +16,7 @@ const rules = {
       trigger: 'blur'
     }
   ],
-  cate_alias: [
+  alias: [
     { required: true, message: '请输入分类别名', trigger: 'blur' },
     {
       pattern: /^[a-zA-Z0-9]{1,15}$/,
@@ -43,7 +43,7 @@ const onSubmit = async () => {
 
 // 组件对外暴露一个方法 open，基于open传来的参数，区分添加还是编辑
 // open({})  => 表单无需渲染，说明是添加
-// open({ id, cate_name, ... })  => 表单需要渲染，说明是编辑
+// open({ id, name, ... })  => 表单需要渲染，说明是编辑
 // open调用后，可以打开弹窗
 const open = (row) => {
   dialogVisible.value = true
@@ -69,15 +69,15 @@ defineExpose({
       label-width="100px"
       style="padding-right: 30px"
     >
-      <el-form-item label="分类名称" prop="cate_name">
+      <el-form-item label="分类名称" prop="name">
         <el-input
-          v-model="formModel.cate_name"
+          v-model="formModel.name"
           placeholder="请输入分类名称"
         ></el-input>
       </el-form-item>
-      <el-form-item label="分类别名" prop="cate_alias">
+      <el-form-item label="分类别名" prop="alias">
         <el-input
-          v-model="formModel.cate_alias"
+          v-model="formModel.alias"
           placeholder="请输入分类别名"
         ></el-input>
       </el-form-item>

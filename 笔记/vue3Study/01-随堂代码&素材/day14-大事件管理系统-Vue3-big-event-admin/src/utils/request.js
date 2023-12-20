@@ -9,7 +9,7 @@ const baseURL = 'http://localhost:3007'
 const instance = axios.create({
   // TODO 1. 基础地址，超时时间
   baseURL,
-  timeout: 10000
+  timeout: 1000000
 })
 
 // 请求拦截器
@@ -31,6 +31,9 @@ instance.interceptors.response.use(
     // TODO 4. 摘取核心响应数据
     if (res.data.status === 0) {
       return res
+    }
+    if (res.data.status == 2) {
+      router.push('/login')
     }
     // TODO 3. 处理业务失败
     // 处理业务失败, 给错误提示，抛出错误
