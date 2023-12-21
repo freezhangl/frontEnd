@@ -5,12 +5,11 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var app = express();
-// 导入并配置 cors 中间件
+//配置结束文件的最大数据
 var bodyParser = require('body-parser');
-
 app.use(bodyParser.json({limit: '50mb'}));
-
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
+// 导入并配置 cors 中间件
 const cors = require('cors')
 app.use(cors())
 // 一定要在路由之前，封装 res.cc 函数
