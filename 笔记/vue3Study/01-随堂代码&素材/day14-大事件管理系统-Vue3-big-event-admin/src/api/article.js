@@ -12,10 +12,8 @@ export const artDelChannelService = (id) => {
 }
 
 // 文章：获取文章列表
-export const artGetListService = (params) =>
-  request.get('/my/article/list', {
-    params
-  })
+export const artGetListService = (data) =>
+  request.post('/my/article/list', data)
 
 // 文章：添加文章
 // 注意：data需要是一个formData格式的对象
@@ -28,8 +26,10 @@ export const artGetDetailService = (id) =>
   })
 
 // 文章：编辑文章接口
-export const artEditService = (data) => request.put('/my/article/info', data)
+export const artEditService = (data) => request.post('/my/article/edit', data)
 
 // 文章：删除文章接口
 export const artDelService = (id) =>
-  request.delete('/my/article/info', { params: { id } })
+  request.post('/my/article/del', id, {
+    params: { id: id.id }
+  })

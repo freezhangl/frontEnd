@@ -29,7 +29,7 @@ getChannelList()
     <el-option
       v-for="channel in channelList"
       :key="channel.id"
-      :label="channel.cate_name"
+      :label="channel.name"
       :value="channel.id"
     ></el-option>
   </el-select>

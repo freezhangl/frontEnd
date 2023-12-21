@@ -31,10 +31,12 @@ router.post('/add', uploads.single('cover_img'), expressJoi(addArticleSchema), a
 // 获取文章列表数据的路由
 router.post('/list', articleHandler.getArticles)
 // 删除文章的路由
-router.get('/deleteicle/:id', expressJoi(articleIdSchema), articleHandler.deleteIcleById)
+router.post('/del', articleHandler.deleteIcleById)
 // 获取文章详情的路由
-router.get('/articleinfo/:id', expressJoi(articleIdSchema), articleHandler.getArticleById)
+router.get('/info', articleHandler.getArticleById)
+// router.get('/info', expressJoi(articleIdSchema), articleHandler.getArticleById)
 // 更新文章信息的路由
-router.post('/updateicle', expressJoi(updateArticleSchema), articleHandler.updateIcleById)
+router.post('/edit',uploads.single('cover_img'),articleHandler.updateIcleById)
+// router.post('/edit', expressJoi(updateArticleSchema), articleHandler.updateIcleById)
 
 module.exports = router
