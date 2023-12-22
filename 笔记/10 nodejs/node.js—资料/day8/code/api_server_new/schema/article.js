@@ -5,14 +5,16 @@ const joi = require('joi')
 const title = joi.string().required()
 const id = joi.required()
 const cate_id = joi.number().integer().min(1).required()
+const cate_name = joi.string().required()
 const content = joi.string().required().allow('')
 const state = joi.string().valid('1', '2').required()
 
 // 验证规则对象 - 发布新文章
-exports.addArticleSchema = { 
+exports.addArticleSchema = {
   body: {
     title,
     cate_id,
+    cate_name,
     content,
     state
   }

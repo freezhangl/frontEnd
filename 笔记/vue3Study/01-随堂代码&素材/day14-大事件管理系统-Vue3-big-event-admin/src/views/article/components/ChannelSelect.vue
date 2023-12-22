@@ -10,11 +10,12 @@ defineProps({
     type: String
   }
 })
-const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits(['update:modelValue', 'updateChannelList'])
 const channelList = ref([])
 const getChannelList = async () => {
   const res = await artGetChannelsService()
   channelList.value = res.data.data
+  emit('updateChannelList', res.data.data)
 }
 getChannelList()
 </script>

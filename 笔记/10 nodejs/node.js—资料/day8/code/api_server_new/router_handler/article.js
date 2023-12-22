@@ -4,6 +4,7 @@ const db = require('../db/index')
 
 // 发布文章的处理函数
 exports.addArticle = (req, res) => {
+  console.log(req.file,'我是请求的信息')
   if (!req.file || req.file.fieldname !== 'cover_img') return res.cc('文章封面是必选参数！')
 
   // TODO：证明数据都是合法的，可以进行后续业务逻辑的处理
@@ -12,7 +13,7 @@ exports.addArticle = (req, res) => {
     // 标题、内容、发布状态、所属分类的Id
     ...req.body,
     // 文章封面的存放路径
-    cover_img: path.join('/uploads', req.file.filename),
+    cover_img: path.join('/public/uploads', req.file.filename),
     // 文章的发布时间
     pub_date: new Date().getTime(),
     // 文章作者的Id
@@ -28,7 +29,7 @@ exports.addArticle = (req, res) => {
 }
 // 获取文章列表数据的处理函数
 exports.getArticles = (req, res) => {
-  let name = req.body?.name
+  let title = req.body?.title
   let pagesize = req.body.pagesize || 5 // 页大小
   let pagenum = req.body.pagenum || 1 // 当前页
   let start = (pagenum - 1) * pagesize; // 起始位置
@@ -41,8 +42,12 @@ exports.getArticles = (req, res) => {
   if (req.body.state) {
     searchSql2 = `and state=${req.body.state}`
   }
-  let sql1 = `SELECT *  FROM ev_articles where is_delete = 0 ${searchSql1} ${searchSql2} order by id LIMIT ${start},${pagesize}`
-  const totalSql = `select count(*) as total from ev_articles where is_delete=0`;
+  let searchSql3 = ''
+  if(title.length){
+    searchSql3 = `and title LIKE '%${title}%'`
+  }
+  let sql1 = `SELECT *  FROM ev_articles where is_delete = 0 ${searchSql1} ${searchSql2} ${searchSql3} order by pub_date desc LIMIT ${start},${pagesize}`
+  const totalSql = `select count(*) as total from ev_articles where is_delete=0 ${searchSql3}`;
   db.query(sql1, [start, pagesize], (err, results) => {
     if (err) return res.cc(err)
     db.query(totalSql, (err, results1) => {
@@ -88,7 +93,11 @@ exports.getArticleById = (req, res) => {
 }
 // 更新文章信息的处理函数
 exports.updateIcleById = (req, res) => {
-  console.log(req.body,'分解结构12')
+  console.log(req.file,'分解结构12')
+  req.body={
+    ...req.body,
+    cover_img: path.join('/public/uploads', req.file.filename),
+  }
   const sql = 'update ev_articles set ? where Id = ? and is_delete = 0'
   db.query(sql, [req.body, req.body.id], (err, results) => {
     if (err) res.cc(err)

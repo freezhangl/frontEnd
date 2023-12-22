@@ -14,6 +14,7 @@
         <channel-select
           v-model="formModel.cate_id"
           width="100%"
+          @updateChannelList="updateChannelList"
         ></channel-select>
       </el-form-item>
       <el-form-item label="文章封面" prop="cover_img">
@@ -68,9 +69,12 @@ const visibleDrawer = ref(false)
 const defaultForm = {
   title: '', // 标题
   cate_id: '', // 分类id
+  cate_name: '', // 分类id
   cover_img: '', // 封面图片 file 对象
   content: '', // string 内容
-  state: '' // 状态
+  state: '', // 状态
+  a: 'fds你好吗',
+  b: 'c'
 }
 
 // 准备数据
@@ -92,10 +96,16 @@ const onPublish = async (state) => {
 
   // 注意：当前接口，需要的是 formData 对象
   // 将普通对象 => 转换成 => formData对象
+  if (formModel.value.cate_id) {
+    formModel.value.cate_name = channelList.value.filter((item) => {
+      return item.id == formModel.value.cate_id
+    })[0].name
+  }
   let fd = new FormData()
   for (let key in formModel.value) {
     fd.append(key, formModel.value[key])
   }
+  console.log(fd, '我是哈哈')
   // 发请求
   if (formModel.value.id) {
     // 编辑操作
@@ -113,7 +123,10 @@ const onPublish = async (state) => {
     emit('success', 'add')
   }
 }
-
+const channelList = ref([])
+const updateChannelList = (val) => {
+  channelList.value = val
+}
 // 组件对外暴露一个方法 open，基于open传来的参数，区分添加还是编辑
 // open({})  => 表单无需渲染，说明是添加
 // open({ id, ..., ... })  => 表单需要渲染，说明是编辑
@@ -133,6 +146,7 @@ const open = async (row) => {
       imgUrl.value,
       formModel.value.cover_img
     )
+    console.log(imgUrl.value, '发多少很过分', file)
     formModel.value.cover_img = file
     editorRef.value?.setHTML(formModel.value.content)
     console.log(formModel.value, '范德萨回复')

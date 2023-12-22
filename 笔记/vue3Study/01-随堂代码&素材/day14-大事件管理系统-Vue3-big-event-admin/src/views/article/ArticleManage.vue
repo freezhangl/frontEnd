@@ -14,7 +14,8 @@ const params = ref({
   pagenum: 1, // 当前页
   pagesize: 5, // 当前生效的每页条数
   cateId: '',
-  state: ''
+  state: '',
+  title: ''
 })
 
 // 基于params参数，获取文章列表
@@ -57,6 +58,7 @@ const onReset = () => {
   params.value.pagenum = 1 // 重置页面
   params.value.cateId = ''
   params.value.state = ''
+  params.value.title = ''
   getArticleList()
 }
 
@@ -105,6 +107,9 @@ const onSuccess = (type) => {
 
     <!-- 表单区域 -->
     <el-form inline>
+      <el-form-item label="文章标题">
+        <el-input v-model="params.title" placeholder="请输入标题"></el-input>
+      </el-form-item>
       <el-form-item label="文章分类:">
         <!-- Vue2 => v-model :value 和 @input 的简写 -->
         <!-- Vue3 => v-model :modelValue 和 @update:modelValue 的简写 -->
