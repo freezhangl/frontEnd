@@ -1,7 +1,7 @@
 // 文章的处理函数模块
 const path = require('path')
 const db = require('../db/index')
-
+const fs=require('fs')
 // 发布文章的处理函数
 exports.addArticle = (req, res) => {
   console.log(req.file,'我是请求的信息')
@@ -93,11 +93,29 @@ exports.getArticleById = (req, res) => {
 }
 // 更新文章信息的处理函数
 exports.updateIcleById = (req, res) => {
-  console.log(req.file,'分解结构12')
+  console.log(req.files,'分解结构1234')
   req.body={
     ...req.body,
-    cover_img: path.join('/public/uploads', req.file.filename),
+    cover_img:JSON.stringify(req.files.cover_img.map(item=>{
+      return {
+        name:item.originalname,
+        path:path.join('/public/uploads', item.originalname)
+      }
+    })),
+    fileList:JSON.stringify(req.files.fileList.map(item=>{
+      return {
+        name:item.originalname,
+        path:path.join('/public/uploads', item.originalname)
+      }
+    }))
+    // cover_img: path.join('/public/uploads', req.file.originalname),
   }
+  req.files.cover_img.forEach(item=>{
+    fs.renameSync(item.path,path.join(__dirname,'../public/uploads', item.originalname))
+  })
+  req.files.fileList.forEach(item=>{
+    fs.renameSync(item.path,path.join(__dirname,'../public/uploads', item.originalname))
+  })
   const sql = 'update ev_articles set ? where Id = ? and is_delete = 0'
   db.query(sql, [req.body, req.body.id], (err, results) => {
     if (err) res.cc(err)

@@ -32,6 +32,21 @@
           <el-icon v-else class="avatar-uploader-icon"><Plus /></el-icon>
         </el-upload>
       </el-form-item>
+      <el-form-item label="文章封面列表" prop="fileList">
+        <el-upload
+          v-model:file-list="formModel.fileList"
+          class="upload-demo"
+          :auto-upload="false"
+          list-type="picture"
+        >
+          <el-button type="primary">Click to upload</el-button>
+          <template #tip>
+            <div class="el-upload__tip">
+              jpg/png files with a size less than 500kb
+            </div>
+          </template>
+        </el-upload>
+      </el-form-item>
       <el-form-item label="文章内容" prop="content">
         <div class="editor">
           <quill-editor
@@ -71,6 +86,7 @@ const defaultForm = {
   cate_id: '', // 分类id
   cate_name: '', // 分类id
   cover_img: '', // 封面图片 file 对象
+  fileList: [],
   content: '', // string 内容
   state: '', // 状态
   a: 'fds你好吗',
@@ -103,8 +119,13 @@ const onPublish = async (state) => {
   }
   let fd = new FormData()
   for (let key in formModel.value) {
-    fd.append(key, formModel.value[key])
+    if (key != 'fileList') {
+      fd.append(key, formModel.value[key])
+    }
   }
+  formModel.value.fileList.forEach((item) => {
+    fd.append('fileList', item.raw)
+  })
   console.log(fd, '我是哈哈')
   // 发请求
   if (formModel.value.id) {
@@ -138,8 +159,18 @@ const open = async (row) => {
     // 需要基于 row.id 发送请求，获取编辑对应的详情数据，进行回显
     const res = await artGetDetailService(row.id)
     formModel.value = res.data.data
+    formModel.value.cover_img = JSON.parse(res.data.data.cover_img)[0].path
     // 图片需要单独处理回显
     imgUrl.value = baseURL + formModel.value.cover_img
+    console.log(formModel.value.cover_img, '久啊加肥加大', imgUrl.value)
+    formModel.value.fileList = JSON.parse(formModel.value.fileList).map(
+      (item) => {
+        return {
+          name: item.name,
+          url: baseURL + item.path
+        }
+      }
+    )
     // 注意：提交给后台，需要的数据格式，是file对象格式
     // 需要将网络图片地址 => 转换成 file对象，存储起来, 将来便于提交
     const file = await imageUrlToFileObject(

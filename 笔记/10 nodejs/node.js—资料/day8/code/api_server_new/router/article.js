@@ -2,6 +2,10 @@
 
 const express = require('express')
 const router = express.Router()
+const fieldsConfig = [
+  {name: 'cover_img', maxCount: 2},
+  {name: 'fileList', maxCount: 2}
+];
 
 // 导入需要的处理函数模块
 const articleHandler = require('../router_handler/article')
@@ -18,7 +22,7 @@ const expressJoi = require('@escook/express-joi')
 const { addArticleSchema, articleIdSchema, updateArticleSchema } = require('../schema/article')
 
 // 发布文章的路由
-router.post('/add', uploads.single('cover_img'), expressJoi(addArticleSchema), articleHandler.addArticle)
+router.post('/add', uploads.fields(fieldsConfig), expressJoi(addArticleSchema), articleHandler.addArticle)
 
 
 
@@ -36,7 +40,7 @@ router.post('/del', articleHandler.deleteIcleById)
 router.get('/info', articleHandler.getArticleById)
 // router.get('/info', expressJoi(articleIdSchema), articleHandler.getArticleById)
 // 更新文章信息的路由
-router.post('/edit',uploads.single('cover_img'),articleHandler.updateIcleById)
+router.post('/edit',uploads.fields(fieldsConfig),articleHandler.updateIcleById)
 // router.post('/edit', expressJoi(updateArticleSchema), articleHandler.updateIcleById)
 
 module.exports = router
