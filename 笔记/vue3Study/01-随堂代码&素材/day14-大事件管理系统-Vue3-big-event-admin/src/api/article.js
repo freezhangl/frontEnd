@@ -33,3 +33,9 @@ export const artDelService = (id) =>
   request.post('/my/article/del', id, {
     params: { id: id.id }
   })
+
+// 文章：删除文章接口
+export const artdown = (id) =>
+  request.post('/my/article/down', id, {
+    responseType: 'blob'
+  })

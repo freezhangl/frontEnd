@@ -20,6 +20,9 @@ instance.interceptors.request.use(
     if (useStore.token) {
       config.headers.Authorization = useStore.token
     }
+    if (config.responseType) {
+      config.headers.responseType = config.responseType
+    }
     return config
   },
   (err) => Promise.reject(err)
@@ -28,6 +31,9 @@ instance.interceptors.request.use(
 // 响应拦截器
 instance.interceptors.response.use(
   (res) => {
+    if (res.request.responseType === 'blob') {
+      return res
+    }
     // TODO 4. 摘取核心响应数据
     if (res.data.status === 0) {
       return res

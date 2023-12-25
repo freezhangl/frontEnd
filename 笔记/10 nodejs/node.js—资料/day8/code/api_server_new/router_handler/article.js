@@ -77,7 +77,27 @@ exports.deleteIcleById = (req, res) => {
     res.cc('删除文章成功!', 0)
   })
 }
-
+exports.downById=(req,res)=>{
+  console.log(req,'你翻翻个1')
+  const sql= `select * from ev_articles where id =?`
+  db.query(sql,req.body.id,(err,results)=>{
+    if (err) return res.cc(err)
+    if (results.length == 1){
+      let cover_img=JSON.parse(results[0].cover_img)[0].path
+      console.log(path.join(__dirname,'../',cover_img) ,'af刚发的1')
+      const readStream = fs.createReadStream(path.join(__dirname,'../',cover_img));
+      res.setHeader('Access-Control-Expose-Headers','Content-Disposition');
+      res.set({
+        'Content-Type': 'application/octet-stream',// 告诉浏览器这是一个二进制文件
+        'Content-Disposition': 'attachment; filename=' + JSON.parse(results[0].cover_img)[0].name// 告诉浏览器这是一个需要下载的文件
+      });
+      readStream.pipe(res);
+      readStream.on('finish', () => {
+          readStream.close();
+      });
+    }
+  })
+}
 // 获取文章详情的处理函数
 exports.getArticleById = (req, res) => {
   const sql = 'select * from ev_articles where id = ? and is_delete = 0'

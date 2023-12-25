@@ -35,7 +35,9 @@ router.post('/add', uploads.fields(fieldsConfig), expressJoi(addArticleSchema), 
 // 获取文章列表数据的路由
 router.post('/list', articleHandler.getArticles)
 // 删除文章的路由
-router.post('/del', articleHandler.deleteIcleById)
+router.post('/del', articleHandler.deleteIcleById) 
+// 下载文章封面的路由
+router.post('/down', articleHandler.downById)
 // 获取文章详情的路由
 router.get('/info', articleHandler.getArticleById)
 // router.get('/info', expressJoi(articleIdSchema), articleHandler.getArticleById)

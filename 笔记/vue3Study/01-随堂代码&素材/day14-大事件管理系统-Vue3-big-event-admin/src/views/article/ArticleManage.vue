@@ -1,13 +1,14 @@
 <script setup>
 import { ref } from 'vue'
-import { Delete, Edit } from '@element-plus/icons-vue'
+import { Delete, Edit, Star } from '@element-plus/icons-vue'
 import ChannelSelect from './components/ChannelSelect.vue'
 import ArticleEdit from './components/ArticleEdit.vue'
-import { artGetListService, artDelService } from '@/api/article.js'
+import { artGetListService, artDelService, artdown } from '@/api/article.js'
 import { formatTime } from '@/utils/format.js'
 const articleList = ref([]) // 文章列表
 const total = ref(0) // 总条数
 const loading = ref(false) // loading状态
+import { baseURL } from '@/utils/request'
 
 // 定义请求参数对象
 const params = ref({
@@ -71,7 +72,31 @@ const onAddArticle = () => {
 const onEditArticle = (row) => {
   articleEditRef.value.open(row)
 }
-
+const ondownload = (row) => {
+  artdown({ id: row.id }).then((res) => {
+    console.log(res, '我是啥')
+    downloadfile(res)
+  })
+}
+const downloadfile = (res) => {
+  var blob = new Blob([res.data], {
+    type: 'application/octet-stream;charset=UTF-8'
+  })
+  var contentDisposition = res.headers['content-disposition']
+  var patt = new RegExp('filename=([^;]+\\.[^\\.;]+);*')
+  var result = patt.exec(contentDisposition)
+  var filename = result[1]
+  var downloadElement = document.createElement('a')
+  var href = window.URL.createObjectURL(blob) // 创建下载的链接
+  var reg = /^["](.*)["]$/g
+  downloadElement.style.display = 'none'
+  downloadElement.href = href
+  downloadElement.download = decodeURI(filename.replace(reg, '$1')) // 下载后文件名
+  document.body.appendChild(downloadElement)
+  downloadElement.click() // 点击下载
+  document.body.removeChild(downloadElement) // 下载完成移除元素
+  window.URL.revokeObjectURL(href)
+}
 // 删除逻辑
 const onDeleteArticle = async (row) => {
   // 提示用户是否要删除
@@ -138,6 +163,14 @@ const onSuccess = (type) => {
           <el-link type="primary" :underline="false">{{ row.title }}</el-link>
         </template>
       </el-table-column>
+      <el-table-column label="文章封面" prop="title">
+        <template #default="{ row }">
+          <img
+            height="50px"
+            :src="baseURL + JSON.parse(row.cover_img)[0].path"
+          />
+        </template>
+      </el-table-column>
       <el-table-column label="分类" prop="cate_name"></el-table-column>
       <el-table-column label="发表时间" prop="pub_date">
         <template #default="{ row }">
@@ -165,6 +198,13 @@ const onSuccess = (type) => {
             type="danger"
             :icon="Delete"
             @click="onDeleteArticle(row)"
+          ></el-button>
+          <el-button
+            plain
+            circle
+            type="warning"
+            :icon="Star"
+            @click="ondownload(row)"
           ></el-button>
         </template>
       </el-table-column>
