@@ -166,7 +166,7 @@ const onSuccess = (type) => {
       <el-table-column label="文章封面" prop="title">
         <template #default="{ row }">
           <img
-            height="50px"
+            style="display: block; width: 50px; height: 50px"
             :src="baseURL + JSON.parse(row.cover_img)[0].path"
           />
         </template>
