@@ -84,7 +84,7 @@ app.use(function(err, req, res, next) {
     // 身份认证失败后的错误
     if (err.name === 'UnauthorizedError') return res.cc('token过期,身份认证失败！',2)
     // 未知的错误
-    res.cc(err)
+    res.cc(err) 
 });
 
 module.exports = app;
