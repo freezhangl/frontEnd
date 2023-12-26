@@ -3,8 +3,9 @@ import { useUserStore } from '@/stores'
 import { ElMessage } from 'element-plus'
 import router from '@/router'
 // const baseURL = 'http://big-event-vue-api-t.itheima.net'
-// const baseURL = 'http://124.222.113.11:3007'
-const baseURL = 'http://localhost:3007'
+const baseURL = 'http://124.222.113.11:3008'
+// const baseURL = 'http://localhost:3008'
+// const baseURL = ':3008'
 // 你好吗
 const instance = axios.create({
   // TODO 1. 基础地址，超时时间

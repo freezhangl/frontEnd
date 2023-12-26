@@ -5,15 +5,34 @@ const fs=require('fs')
 // 发布文章的处理函数
 exports.addArticle = (req, res) => {
   console.log(req.file,'我是请求的信息')
-  if (!req.file || req.file.fieldname !== 'cover_img') return res.cc('文章封面是必选参数！')
+  // if (!req.file || req.file.fieldname !== 'cover_img') return res.cc('文章封面是必选参数！')
 
   // TODO：证明数据都是合法的，可以进行后续业务逻辑的处理
+  req.body={
+    ...req.body,
+    cover_img:JSON.stringify(req.files.cover_img.map(item=>{
+      return {
+        name:item.originalname,
+        path:path.join('/public/uploads', item.originalname)
+      }
+    })),
+    fileList:JSON.stringify(req.files.fileList.map(item=>{
+      return {
+        name:item.originalname,
+        path:path.join('/public/uploads', item.originalname)
+      }
+    }))
+  }
+  req.files.cover_img.forEach(item=>{
+    fs.renameSync(item.path,path.join(__dirname,'../public/uploads', item.originalname))
+  })
+  req.files.fileList.forEach(item=>{
+    fs.renameSync(item.path,path.join(__dirname,'../public/uploads', item.originalname))
+  })
   // 处理文章的信息对象
   const articleInfo = {
     // 标题、内容、发布状态、所属分类的Id
     ...req.body,
-    // 文章封面的存放路径
-    cover_img: path.join('/public/uploads', req.file.filename),
     // 文章的发布时间
     pub_date: new Date().getTime(),
     // 文章作者的Id
