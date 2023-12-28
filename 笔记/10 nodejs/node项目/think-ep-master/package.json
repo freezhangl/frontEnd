@@ -1,0 +1,28 @@
+{
+  "name": "thinkep",
+  "version": "1.0.0",
+  "description": "node.j+express mark the framework",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "daming",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.2",
+    "formidable": "^2.0.1",
+    "joi": "^6.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.5.2",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.6",
+    "nodemon": "^2.0.18",
+    "qr-image": "^3.2.0",
+    "redis": "^4.1.1",
+    "sequelize": "^5.22.4",
+    "svg-captcha": "^1.4.0"
+  }
+}
