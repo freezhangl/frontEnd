@@ -46,7 +46,7 @@ module.exports = {
         pathRewrite: {
           '^/mg': ''
         },
-        // logLevel:'debug' // 打印代理以后的地址
+        logLevel:'debug' // 打印代理以后的地址
       },
       '/req_ip': {
         target: 'http://pv.sohu.com', //获取Ip地址
