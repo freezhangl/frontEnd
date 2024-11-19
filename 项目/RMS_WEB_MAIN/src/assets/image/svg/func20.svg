@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>19</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="97.2025746%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#0B82FF" offset="0%"></stop>
+            <stop stop-color="#05B3FF" offset="100%"></stop>
+            <stop stop-color="#5533FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="首页+我的工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="005-发起申请备份" transform="translate(-271.000000, -242.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M290.194526,242 C300.778766,242 309.389052,250.610682 309.389052,261.19457 C309.389052,271.778458 300.778766,280.389096 290.194526,280.389096 C279.610286,280.389096 271,271.778458 271,261.19457 C271,250.610682 279.610286,242 290.194526,242 Z M299.005894,255.19457 L292.509505,261.690959 L288.544673,257.726126 C288.061112,257.242566 287.277143,257.242566 286.793583,257.726126 L286.793583,257.726126 L279.194526,265.325183 L281.383158,267.513815 L287.669146,261.227864 L291.633979,265.192659 C292.117539,265.67622 292.901508,265.67622 293.385069,265.192659 L293.385069,265.192659 L301.194526,257.383202 L299.005894,255.19457 Z" id="19"></path>
+        </g>
+    </g>
+</svg>

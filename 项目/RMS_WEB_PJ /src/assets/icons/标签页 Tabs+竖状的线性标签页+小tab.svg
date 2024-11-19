@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="270px" viewBox="0 0 75 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>标签页 Tabs+竖状的线性标签页+小tab</title>
+    <desc>Created with Sketch.</desc>
+    <g id="全生命周期管理1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的项目管理-我的项目17-项目1-主页-关联成果展开查询条件" transform="translate(-1399.000000, -284.000000)">
+            <g id="编组-2" transform="translate(79.000000, 79.000000)">
+                <g id="编组-27" transform="translate(0.000000, 1.000000)">
+                    <g id="标签页-Tabs-竖状的线性标签页" transform="translate(1320.000000, 204.000000)">
+                        <g id="标签页-Tabs+竖状的线性标签页+小tab">
+                            <rect id="Rectangle-4" stroke="#CCCCCC" x="5.5" y="0.5" width="1" height="269"></rect>
+                            <g id="Group" transform="translate(0.000000, 37.000000)">
+                                <circle id="Oval" fill="#FFFFFF" cx="5.5" cy="5.5" r="5.5"></circle>
+                                <circle id="Oval" stroke="#0B82FF" stroke-width="3" cx="5.5" cy="5.5" r="4"></circle>
+                            </g>
+                            <text id="资源矩阵" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="20" fill="#333333">
+                                <tspan x="27" y="119">资源矩阵</tspan>
+                            </text>
+                            <text id="团队成员" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="20" fill="#333333">
+                                <tspan x="27" y="155">团队成员</tspan>
+                            </text>
+                            <text id="成果信息" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="20" fill="#333333">
+                                <tspan x="27" y="191">成果信息</tspan>
+                            </text>
+                            <text id="里程碑" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="20" fill="#333333">
+                                <tspan x="27" y="227">里程碑</tspan>
+                            </text>
+                            <text id="基本信息" font-family="PingFangSC-Medium, PingFang SC" font-size="12" font-weight="400" line-spacing="20" fill="#0B82FF">
+                                <tspan x="27" y="47">基本信息</tspan>
+                            </text>
+                            <text id="属性信息" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="20" fill="#333333">
+                                <tspan x="27" y="83">属性信息</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

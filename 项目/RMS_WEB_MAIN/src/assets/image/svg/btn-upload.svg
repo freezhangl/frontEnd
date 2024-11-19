@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="13px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>cloud-upload</title>
+    <desc>Created with Sketch.</desc>
+    <g id="自立项目2-项目流程" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的项目管理-我的项目-自立项目10-项目流程-立项流程-审批" transform="translate(-713.000000, -136.000000)">
+            <g id="编组-33" transform="translate(79.000000, 79.000000)">
+                <g id="顶部悬浮按钮栏" transform="translate(0.000000, 38.000000)">
+                    <g id="编组-5" transform="translate(130.000000, 10.000000)">
+                        <g id="按钮/按钮/上传文件-1" transform="translate(496.000000, 0.000000)">
+                            <g id="按钮/按钮备份">
+                                <g id="cloud-upload" transform="translate(9.000000, 10.000000)">
+                                    <path d="M12.90333,4.02402 C12.44933,1.73 10.42733,0 8,0 C6.07200334,0 4.40199667,1.09267333 3.56733,2.69067333 C1.56200334,2.90665333 0,4.60335333 0,6.66668667 C0,8.87602 1.79067,10.6666867 4,10.6666867 L12.6666633,10.6666867 C14.50733,10.6666867 16,9.17468667 16,7.33335333 C16,5.57335333 14.63133,4.14735333 12.90333,4.02402 Z" id="Path" stroke="#333333"></path>
+                                    <polygon id="Path" fill="#333333" points="9.33333 6.00002 9.33333 8.66668667 6.66667 8.66668667 6.66667 6.00002 4.66666334 6.00002 7.99999667 2.66666667 11.33333 6.00002"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

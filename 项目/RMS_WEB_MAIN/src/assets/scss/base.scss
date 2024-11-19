@@ -1,0 +1,63 @@
+// $--color-primary: #0b8de5 !default;
+// $--color-sec-primary: rgba(64, 158, 255, 0.1);
+// $--color-success: #0b8de5 !default;
+
+//$color-background-normal: #F4F4F4;
+//$color-border-normal: 1px solid #e5e5e5;
+//$color-text-normal: #333333;
+//$color-main: #0B82FF;
+
+html,body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px !important;
+  background: #ffffff;
+  font-family: "Helvetica Neue","Helvetica","Arial","PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei","黑体","宋体","WenQuanYi Micro Hei",sans-serif;
+  font-size: 14px;
+}
+.global-family{
+  font-family: "Helvetica Neue","Helvetica","Arial","PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei","黑体","宋体","WenQuanYi Micro Hei",sans-serif;
+}
+textarea{
+  resize: none;
+}
+a{
+  text-decoration:none;
+  color: #535861;
+}
+a:link{
+  text-decoration:none;
+  cursor:pointer;
+}
+a:visited{
+  text-decoration:none;
+  cursor:pointer;
+}
+a:active{
+  text-decoration:none;
+  cursor:pointer;
+}
+a:hover{
+  text-decoration:none;
+  cursor:pointer;
+  color: #4A90E2;
+}
+
+li{
+  list-style: none;
+}
+
+::-webkit-input-placeholder{
+  color: #93979D !important;
+}
+::-moz-placeholder{ /* Mozilla Firefox 19+ */
+  color: #93979D !important;
+}
+:-ms-input-placeholder{ /*Internet Explorer 10-11*/
+  color: #93979D !important;
+}
+
+/* elementui 部分样式覆盖, 通用form，通用button */
+@import '../scss/custom_element_ui.scss';
+@import '../scss/custom_form.scss';
+@import '../scss/custom_btn.scss';

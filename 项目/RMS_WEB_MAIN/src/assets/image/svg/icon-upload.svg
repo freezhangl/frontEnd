@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="13px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>按钮/按钮/上传文件 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="测试任务流程设计" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-267.000000, -409.000000)">
+            <g id="按钮/按钮/上传文件-1" transform="translate(268.000000, 410.000000)">
+                <g id="按钮/按钮备份">
+                    <g id="cloud-upload">
+                        <path d="M12.90333,4.02402 C12.44933,1.73 10.42733,0 8,0 C6.07200334,0 4.40199667,1.09267333 3.56733,2.69067333 C1.56200334,2.90665333 0,4.60335333 0,6.66668667 C0,8.87602 1.79067,10.6666867 4,10.6666867 L12.6666633,10.6666867 C14.50733,10.6666867 16,9.17468667 16,7.33335333 C16,5.57335333 14.63133,4.14735333 12.90333,4.02402 Z" id="Path" stroke="#0B82FF"></path>
+                        <polygon id="Path" fill="#0B82FF" points="9.33333 6.00002 9.33333 8.66668667 6.66667 8.66668667 6.66667 6.00002 4.66666334 6.00002 7.99999667 2.66666667 11.33333 6.00002"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

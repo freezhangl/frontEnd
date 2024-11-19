@@ -1,0 +1,66 @@
+此处存放动态表单组件
+  目录结构：
+    list：
+      fActivityList----研发活动清单
+      fAdvancedSelect----高级选择
+      fChargeUnit----承担单位
+      fCheckbox----多选
+      fChooseDepartment----部门选择
+      fChooseUnit----公司选择
+      fDate----日期
+      fDemandUnit----需求单位
+      fInput----单行文本
+      fNaturalNumbers----自然数
+      fNumber----数值
+      fPeopleOptions----人员选择
+      fProjectManage----项目经理
+      fRadio----单选
+      fRelatedSelect----级联选择
+      fSelect----下拉选择
+      fSwitch----开关
+      fTextarea----多行文本
+
+      注：全局注册，直接通过<fActivityList></fActivityList>引入
+
+      组件中传入的props值，示例如下：
+      {
+        "id":"1346652921978163202",
+        "fieldKey":"fghfghf",
+        "fieldTitle":"测试高级选择",
+        "type":"fAdvancedSelect",
+        "typeName":null,
+        "tip":null,
+        "msg":null,
+        "defaultValue":"",
+        "validator":"{"max": "", "min": "", "type": "", "isType": null, "length": 300, "fDoulbe": 0, "message": "", "numFormat": "#"}",
+        "validatorDto":{
+          "length":300,
+          "min":"",
+          "max":"",
+          "type":"",
+          "message":"",
+          "numFormat":"#",
+          "departmentLevel":null,
+          "rootNode":null,
+          "fdouble":null
+        },
+        "attrs":"{"code": "PM_LEVEL", "isMore": "0"}",
+        "attrsDto":{
+          "code":"PM_LEVEL",
+          "dictionaryDtoList":[
+
+          ],
+          "isMore":0,
+          "type":null,
+          "format":null
+        },
+        "isRequire":"0",
+        "isVisible":"0",
+        "isBaseline":"0",
+        "isReadonly":"0",
+        "serialNo":"2",
+        "value":null,
+        "previewName":null,
+        "key":null,
+        "fieldWidth":4
+      }

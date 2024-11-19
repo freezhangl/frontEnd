@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="89.4816796%" y1="119.087285%" x2="0%" y2="-29.4490191%" id="linearGradient-1">
+            <stop stop-color="#FFDB4F" offset="0%"></stop>
+            <stop stop-color="#FFB800" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="首页+我的工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页12-常用功能-更多" transform="translate(-348.000000, -398.000000)">
+            <g id="1" transform="translate(346.000000, 396.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="44" height="44"></rect>
+                <path d="M22,2.8054299 C32.5842399,2.8054299 41.1945261,11.4161119 41.1945261,22 C41.1945261,32.5838881 32.5842399,41.1945261 22,41.1945261 C11.4157601,41.1945261 2.8054739,32.5838881 2.8054739,22 C2.8054739,11.4161119 11.4157601,2.8054299 22,2.8054299 Z M30.8113681,16 L24.3149792,22.4963889 L20.3501466,18.5315562 C19.8665864,18.047996 19.082617,18.047996 18.5990567,18.5315562 L18.5990567,18.5315562 L11,26.1306129 L13.1886319,28.3192448 L19.4746201,22.0332935 L23.4394527,25.9980893 C23.9230129,26.4816495 24.7069824,26.4816495 25.1905426,25.9980893 L25.1905426,25.9980893 L33,18.1886319 L30.8113681,16 Z" id="合并形状" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

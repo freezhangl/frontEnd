@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "svgfont";
+  src: url('svgfont.eot?t=1613981480807'); /* IE9*/
+  src: url('svgfont.eot?t=1613981480807#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("svgfont.woff2?t=1613981480807") format("woff2"),
+  url("svgfont.woff?t=1613981480807") format("woff"),
+  url('svgfont.ttf?t=1613981480807') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('svgfont.svg?t=1613981480807#svgfont') format('svg'); /* iOS 4.1- */
+}
+
+[class^="svgfont-"], [class*=" svgfont-"] {
+  font-family: 'svgfont' !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.svgfont-addfunction:before { content: "\ea01"; }
+.svgfont-adduser:before { content: "\ea02"; }
+.svgfont-adopt:before { content: "\ea03"; }
+.svgfont-approve-log:before { content: "\ea04"; }
+.svgfont-avatar:before { content: "\ea05"; }
+.svgfont-back:before { content: "\ea06"; }
+.svgfont-btn-back:before { content: "\ea07"; }
+.svgfont-btn-cancellation:before { content: "\ea08"; }
+.svgfont-btn-close:before { content: "\ea09"; }
+.svgfont-btn-detail:before { content: "\ea0a"; }
+.svgfont-btn-edit:before { content: "\ea0b"; }
+.svgfont-btn-publish:before { content: "\ea0c"; }
+.svgfont-btn-read:before { content: "\ea0d"; }
+.svgfont-btn-save:before { content: "\ea0e"; }
+.svgfont-btn-submit:before { content: "\ea0f"; }
+.svgfont-btn-trace:before { content: "\ea10"; }
+.svgfont-btn-turntodo:before { content: "\ea11"; }
+.svgfont-btn-upload:before { content: "\ea12"; }
+.svgfont-count-header:before { content: "\ea13"; }
+.svgfont-daochu:before { content: "\ea14"; }
+.svgfont-demand-unit:before { content: "\ea15"; }
+.svgfont-demand-unit1:before { content: "\ea16"; }
+.svgfont-download:before { content: "\ea17"; }
+.svgfont-export:before { content: "\ea18"; }
+.svgfont-export1:before { content: "\ea19"; }
+.svgfont-foot-logo:before { content: "\ea1a"; }
+.svgfont-full-screen:before { content: "\ea1b"; }
+.svgfont-func1:before { content: "\ea1c"; }
+.svgfont-func10:before { content: "\ea1d"; }
+.svgfont-func11:before { content: "\ea1e"; }
+.svgfont-func12:before { content: "\ea1f"; }
+.svgfont-func13:before { content: "\ea20"; }
+.svgfont-func14:before { content: "\ea21"; }
+.svgfont-func15:before { content: "\ea22"; }
+.svgfont-func16:before { content: "\ea23"; }
+.svgfont-func17:before { content: "\ea24"; }
+.svgfont-func18:before { content: "\ea25"; }
+.svgfont-func19:before { content: "\ea26"; }
+.svgfont-func2:before { content: "\ea27"; }
+.svgfont-func20:before { content: "\ea28"; }
+.svgfont-func21:before { content: "\ea29"; }
+.svgfont-func22:before { content: "\ea2a"; }
+.svgfont-func23:before { content: "\ea2b"; }
+.svgfont-func3:before { content: "\ea2c"; }
+.svgfont-func4:before { content: "\ea2d"; }
+.svgfont-func5:before { content: "\ea2e"; }
+.svgfont-func6:before { content: "\ea2f"; }
+.svgfont-func7:before { content: "\ea30"; }
+.svgfont-func8:before { content: "\ea31"; }
+.svgfont-func9:before { content: "\ea32"; }
+.svgfont-gongshitianbao:before { content: "\ea33"; }
+.svgfont-help-center:before { content: "\ea34"; }
+.svgfont-icon-add-default:before { content: "\ea35"; }
+.svgfont-icon-add-dis:before { content: "\ea36"; }
+.svgfont-icon-add-white:before { content: "\ea37"; }
+.svgfont-icon-add:before { content: "\ea38"; }
+.svgfont-icon-allPro:before { content: "\ea39"; }
+.svgfont-icon-back-default:before { content: "\ea3a"; }
+.svgfont-icon-base:before { content: "\ea3b"; }
+.svgfont-icon-bench:before { content: "\ea3c"; }
+.svgfont-icon-delete-dis:before { content: "\ea3d"; }
+.svgfont-icon-delete:before { content: "\ea3e"; }
+.svgfont-icon-dev:before { content: "\ea3f"; }
+.svgfont-icon-fold:before { content: "\ea40"; }
+.svgfont-icon-home:before { content: "\ea41"; }
+.svgfont-icon-logout:before { content: "\ea42"; }
+.svgfont-icon-myPro:before { content: "\ea43"; }
+.svgfont-icon-org:before { content: "\ea44"; }
+.svgfont-icon-other1:before { content: "\ea45"; }
+.svgfont-icon-other2:before { content: "\ea46"; }
+.svgfont-icon-other3:before { content: "\ea47"; }
+.svgfont-icon-other4:before { content: "\ea48"; }
+.svgfont-icon-other5:before { content: "\ea49"; }
+.svgfont-icon-planDec:before { content: "\ea4a"; }
+.svgfont-icon-pro:before { content: "\ea4b"; }
+.svgfont-icon-process:before { content: "\ea4c"; }
+.svgfont-icon-search:before { content: "\ea4d"; }
+.svgfont-icon-selfPro:before { content: "\ea4e"; }
+.svgfont-icon-sys:before { content: "\ea4f"; }
+.svgfont-icon-theme:before { content: "\ea50"; }
+.svgfont-icon-unfold:before { content: "\ea51"; }
+.svgfont-icon-upload:before { content: "\ea52"; }
+.svgfont-icon-worktime:before { content: "\ea53"; }
+.svgfont-import:before { content: "\ea54"; }
+.svgfont-integration:before { content: "\ea55"; }
+.svgfont-jihuabianzhi:before { content: "\ea56"; }
+.svgfont-jihuashenqing:before { content: "\ea57"; }
+.svgfont-jihuaxiada:before { content: "\ea58"; }
+.svgfont-juesefuquan:before { content: "\ea59"; }
+.svgfont-lichengbei:before { content: "\ea5a"; }
+.svgfont-lixiangshenqing:before { content: "\ea5b"; }
+.svgfont-logo-default:before { content: "\ea5c"; }
+.svgfont-logo:before { content: "\ea5d"; }
+.svgfont-logoTitle:before { content: "\ea5e"; }
+.svgfont-logout:before { content: "\ea5f"; }
+.svgfont-org:before { content: "\ea60"; }
+.svgfont-password:before { content: "\ea61"; }
+.svgfont-pdf:before { content: "\ea62"; }
+.svgfont-print:before { content: "\ea63"; }
+.svgfont-reset:before { content: "\ea64"; }
+.svgfont-save:before { content: "\ea65"; }
+.svgfont-sendback:before { content: "\ea66"; }
+.svgfont-Shape:before { content: "\ea67"; }
+.svgfont-shuiyinchaxun:before { content: "\ea68"; }
+.svgfont-shujuzidian:before { content: "\ea69"; }
+.svgfont-theme:before { content: "\ea6a"; }
+.svgfont-tophead:before { content: "\ea6b"; }
+.svgfont-undertake-unit:before { content: "\ea6c"; }
+.svgfont-undertake-unit1:before { content: "\ea6d"; }
+.svgfont-xiangmubiangeng:before { content: "\ea6e"; }
+.svgfont-xiangmuchaxun:before { content: "\ea6f"; }
+.svgfont-xiangmujiesuan:before { content: "\ea70"; }
+.svgfont-xiangmuzhongzhi:before { content: "\ea71"; }
+.svgfont-xitongpeizhi:before { content: "\ea72"; }
+.svgfont-zhiding:before { content: "\ea73"; }

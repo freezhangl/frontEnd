@@ -1,0 +1,10 @@
+该文件目录下存放的是各个tab标签页面，结构及说明如下：
+  tabPages
+    projectInfo---->项目信息
+    taskProgress---->任务进展
+    costInfo---->成本信息
+    projectProgress---->项目流程
+    timeInfo---->工时信息
+    projectDoc---->文档资料
+    purchaseInfo---->采购信息
+    undertakeView---->承担单位视图

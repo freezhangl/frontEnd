@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate">
+    <script type='text/javascript'>
+    function createTempXMLHttpRequest() {
+        var xmlHttp;
+        // 适用于大多数浏览器，以及IE7和IE更高版本
+        try{
+            xmlHttp = new XMLHttpRequest();
+        } catch (e) {
+            // 适用于IE6
+            try {
+                xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                // 适用于IE5.5，以及IE更早版本
+                try{
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e){}
+            }
+        }
+        return xmlHttp;
+    }
+    var xmlHttpTemp = createTempXMLHttpRequest();
+    xmlHttpTemp.open("GET", "/apmjson", false);
+    xmlHttpTemp.onreadystatechange = function() {
+      // readyState == 4说明请求已完成
+      if (xmlHttpTemp.readyState == 4 && xmlHttpTemp.status == 200 || xmlHttpTemp.status == 304) {
+        // 从服务器获得数据
+        // console.log(xmlHttpTemp.responseText);
+        try{
+        var tempObj = eval('(' + xmlHttpTemp.responseText + ')');}
+        catch(e){
+        return;}
+        // console.log(tempObj.licenseKey);
+        // console.log(tempObj.applicationID);
+        var licenseKeyTemp=tempObj.licenseKey;
+        var applicationIDTemp=tempObj.applicationID;
+        if(licenseKeyTemp==null||applicationIDTemp==null)return;
+        window.BWEUM||(BWEUM={});
+    BWEUM.info = {
+        "stand":true,
+        "agentType":"browser",
+        "agent":window.location.host+"/rms/pc/apm/bw-send-416.7.32.js",
+        "beaconUrl":window.location.host+"/beacon",
+        "licenseKey":licenseKeyTemp,
+        "applicationID":applicationIDTemp
+    };
+    var script = document.createElement('script');
+    script.src="apm/bw-loader-416.7.32.js";
+    var DEFAULT_VERSION = 8.0;
+    var ua = navigator.userAgent.toLowerCase();
+    var isIE = ua.indexOf("msie")>-1;
+    var safariVersion;
+    if(isIE){
+        safariVersion =  ua.match(/msie ([\d.]+)/)[1];
+    }
+    if(safariVersion <= DEFAULT_VERSION ){
+      document.getElementsByTagName('head')[0].appendChild(script);
+    } else{
+        document.head.appendChild(script);
+    }
+      }
+    };
+    xmlHttpTemp.send(null);
+
+    </script>
+    <link rel="icon" href="<%= BASE_URL %>favicon.png" />
+    <title>集中化研发项目管理系统</title>
+</head>
+
+<body class="notranslate">
+    <noscript>
+      <strong
+        >We're sorry but crms_webclient doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+<script type="text/javascript">
+    console.log(
+      "版本发布时间：" +
+        "<%= htmlWebpackPlugin.options.builtTime %>"
+    );
+</script>
+
+</html>

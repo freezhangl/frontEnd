@@ -1,0 +1,95 @@
+.form-col {
+  display: flex;
+  .order-form-item {
+    flex: 1;
+    border: 1px solid #edeff2;
+    color: rgba(83, 88, 97, 1);
+    border-top: 0;
+    margin: 0;
+    // width: 100%;
+    &.is-required .el-form-item__label:before {
+      content: none;
+    }
+  }
+  .order_form_content {
+    color: #93979d;
+  }
+  .remark-view {
+    height: 64px;
+    overflow: auto;
+    line-height: 20px;
+    .remark-view-vertical {
+      display: table-cell;
+      vertical-align: middle;
+      height: 64px;
+    }
+  }
+  .order_form_content {
+    color: #93979d;
+  }
+  .remark-view {
+    height: 64px;
+    overflow: auto;
+    line-height: 20px;
+    .remark-view-vertical {
+      display: table-cell;
+      vertical-align: middle;
+      height: 64px;
+    }
+  }
+}
+.form-col:first-of-type .order-form-item {
+  border-top: 1px solid #edeff2;
+}
+.col-one {
+  .el-form-item__label {
+    width: 13%;
+    height: 100%;
+  }
+  .el-form-item__content {
+    width: 86.5%;
+  }
+}
+.col-two {
+  .el-form-item__label {
+    width: 26%;
+    height: 100%;
+  }
+  .el-form-item__content {
+    width: 73%;
+  }
+  .order-form-item.left-item {
+    border-right: 0;
+  }
+}
+.order_form_label {
+  border-right: 1px solid #edeff2;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #454952;
+  background: #f8f8f8;
+}
+.textarea {
+  .el-form-item__label {
+    line-height: 64px;
+  }
+  .el-textarea__inner {
+    overflow: auto;
+    height: 54px;
+    margin: 5px 0;
+  }
+}
+.el-date-editor {
+  width: 100%;
+}
+
+// .custom-purple .el-form-item,.custom-green .el-form-item,.custom-blue .el-form-item,.custom-red .el-form-item {
+//   margin-bottom: 5px;
+// }
+// .custom-purple .el-form-item__label,.custom-green .el-form-item__label,.custom-blue .el-form-item__label,.custom-red .el-form-item__label{
+//   line-height: 20px;
+// }
+// .custom-purple .el-form-item__content,.custom-green .el-form-item__content,.custom-blue .el-form-item__content,.custom-red .el-form-item__content{
+//   line-height: 20px;
+// }

@@ -1,0 +1,132 @@
+$color-background-normal: #F4F4F4;
+$color-border-normal: 1px solid #e5e5e5;
+$color-text-normal: #333333;
+$color-main: #0B82FF;
+
+$color-blue:#0b82ff;//rgb(11, 130, 255)
+$color-red: #de2910;//rgb(222, 41, 16)
+$color-green: #8fc31f;//rgb(143, 195, 31)
+$color-purple: #9940FF;
+$color-white: #ffffff;
+
+$color-blue1: #0085D0; //登录页和顶部的蓝色
+
+$border-color: #e5e5e5;
+$background-color: #f4f4f4;
+
+//通过该函数设置背景颜色，后期方便统一管理
+@mixin background-color($color:$color-blue, $opacity: 1){
+    background-color: rgba($color, $opacity);
+    [data-theme="blue"] & {
+        background-color: rgba($color-blue, $opacity);
+    }
+    [data-theme="red"] & {
+        background-color: rgba($color-red, $opacity);
+    }
+    [data-theme="green"] & {
+        background-color: rgba($color-green, $opacity);
+    }
+    [data-theme="purple"] & {
+        background-color: rgba($color-purple, $opacity);
+    }
+}
+//设置字体颜色
+@mixin color($color:$color-blue, $opacity:1){
+    color: rgba($color, $opacity);
+    [data-theme="blue"] & {
+        color: rgba($color-blue, $opacity);
+    }
+    [data-theme="red"] & {
+        color: rgba($color-red, $opacity);
+    }
+    [data-theme="green"] & {
+        color: rgba($color-green, $opacity);
+    }
+    [data-theme="purple"] & {
+        color: rgba($color-purple, $opacity);
+    }
+}
+//设置边框
+@mixin border($color:$color-blue, $opacity:1){
+    border: 1px solid rgba($color, $opacity);
+    [data-theme="blue"] & {
+        border: 1px solid rgba($color-blue, $opacity);
+    }
+    [data-theme="red"] & {
+        border: 1px solid rgba($color-red, $opacity);
+    }
+    [data-theme="green"] & {
+        border: 1px solid rgba($color-green, $opacity);
+    }
+    [data-theme="purple"] & {
+        border: 1px solid rgba($color-purple, $opacity);
+    }
+}
+
+@mixin box-shadow($color:$color-blue, $opacity:1) {
+    box-shadow: 5px 10px 20px 0 rgba($color, $opacity);
+    [data-theme="blue"] & {
+        box-shadow: 5px 10px 20px 0 rgba($color-blue, $opacity);
+    }
+    [data-theme="red"] & {
+        box-shadow: 5px 10px 20px 0 rgba($color-red, $opacity);
+    }
+    [data-theme="green"] & {
+        box-shadow: 5px 10px 20px 0 rgba($color-green, $opacity);
+    }
+    [data-theme="purple"] & {
+        box-shadow: 5px 10px 20px 0 rgba($color-purple, $opacity);
+    }
+}
+
+@mixin border-bottom-color($color:$color-blue, $opacity:1) {
+    border-bottom-color: rgba($color, $opacity);
+    [data-theme="blue"] & {
+        border-bottom-color: rgba($color-blue, $opacity);
+    }
+    [data-theme="red"] & {
+        border-bottom-color: rgba($color-red, $opacity);
+    }
+    [data-theme="green"] & {
+        border-bottom-color: rgba($color-green, $opacity);
+    }
+    [data-theme="purple"] & {
+        border-bottom-color: rgba($color-purple, $opacity);
+    }
+}
+
+@mixin border-left-color($color:$color-blue, $opacity:1) {
+    border-left-color: rgba($color, $opacity);
+    [data-theme="blue"] & {
+        border-left-color: rgba($color-blue, $opacity);
+    }
+    [data-theme="red"] & {
+        border-left-color: rgba($color-red, $opacity);
+    }
+    [data-theme="green"] & {
+        border-left-color: rgba($color-green, $opacity);
+    }
+    [data-theme="purple"] & {
+        border-left-color: rgba($color-purple, $opacity);
+    }
+}
+
+@mixin focus-box-shadow($color:$color-blue, $opacity:1) {
+    box-shadow: inset 0 0 0px 2px rgba($color, $opacity);
+    @if $color == $color-white {
+        box-shadow: inset 0 0 0px 2px rgba($color-white, $opacity);
+    } @else {
+        [data-theme="blue"] & {
+            box-shadow: inset 0 0 0px 2px rgba($color-blue, $opacity);
+        }
+        [data-theme="red"] & {
+            box-shadow: inset 0 0 0px 2px rgba($color-red, $opacity);
+        }
+        [data-theme="green"] & {
+            box-shadow: inset 0 0 0px 2px rgba($color-green, $opacity);
+        }
+        [data-theme="purple"] & {
+            box-shadow: inset 0 0 0px 2px rgba($color-purple, $opacity);
+        }
+    }
+}

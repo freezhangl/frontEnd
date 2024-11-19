@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>我的项目管理</title>
+    <desc>Created with Sketch.</desc>
+    <g id="全生命周期管理1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的项目管理-我的项目02-创建项目" transform="translate(-100.000000, -229.000000)" stroke="#242830" stroke-width="2">
+            <g id="编组-2" transform="translate(79.000000, 79.000000)">
+                <g id="我的项目管理" transform="translate(22.000000, 151.000000)">
+                    <path d="M5.4368,11 L0.7768,13.7020785 C0.2952,13.9807544 0,14.4819092 0,15.0223249 L0,18 L16,18 L16,15.0223249 C16,14.4811393 15.7048,13.9799846 15.2232,13.7020785 L10.5632,11" id="Path"></path>
+                    <path d="M3,4.70560304 C3.52517506,4.88224122 4.07702568,5 4.65221741,5 C6.28609537,5 7.76075358,4.23266857 8.82027342,3 C9.87979326,4.23266857 11.366122,5 13,5" id="Path"></path>
+                    <path d="M3,4.71428571 C3,2.11042857 5.23833333,0 8,0 C10.7616667,0 13,2.11042857 13,4.71428571 C13,8.64285714 10.7616667,11 8,11 C5.23833333,11 3,8.64285714 3,4.71428571 Z" id="Path" stroke-linecap="square"></path>
+                    <line x1="7" y1="14.5" x2="9" y2="14.5" id="Path" stroke-linecap="square"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

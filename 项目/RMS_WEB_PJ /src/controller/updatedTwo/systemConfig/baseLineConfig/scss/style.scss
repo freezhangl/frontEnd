@@ -1,0 +1,98 @@
+@media screen and (min-width: 1365px) and (max-width: 1450px){
+  .module-wrapper{
+    // width: 1000px !important;
+    .module-option .el-checkbox{
+      width:33.3% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1364px){
+  .module-wrapper{
+    // width: 960px !important;
+    .module-option .el-checkbox{
+      width:33.3% !important;
+    }
+  }
+}
+.wrapper{
+  position: relative;
+  .el-checkbox /deep/ .el-checkbox__input .el-checkbox__inner{
+    width: 15px;height: 15px;
+  }
+  .top-button-wrapper-outer{
+    text-align: right;
+    padding: 20px 30px;
+    .el-button{
+      width: 80px;
+      height: 30px;
+      border-radius: 2px;
+
+      font-size: 12px;
+      padding: 0;
+      &.editor{
+        @include background-color();
+        color: white;
+      }
+      &.save{
+        @include border();
+        @include color();
+      }
+      img{
+        vertical-align: text-top;
+      }
+    }
+  }
+  .module-wrapper{
+    // width: 1120px;
+    padding: 0 30px;
+    padding-bottom:  10px;
+    .module-outer{
+      padding-bottom: 20px;
+      .module-title{
+        border: 1px solid #E9E9E9;
+        border-bottom: 1px solid #E9E9E9;
+        padding: 13px 20px;
+
+        font-size: 16px;
+        color: #333333;
+        height: 50px;
+        box-sizing: border-box;
+        .module-title-text,/deep/ .el-checkbox__label{
+
+          font-size: 16px;
+          color: #333333;
+          font-weight: bold;
+        }
+        .el-checkbox{
+          /deep/ .el-checkbox__input{
+            vertical-align: text-bottom;
+            float: right;
+            height: 15px;
+            margin-top: 1px;
+          }
+          /deep/ .el-checkbox__label{
+            padding:0;
+            padding-right:10px;
+          }
+        }
+      }
+      .module-option{
+        border: 1px solid #E9E9E9;
+        border-top:none;
+        padding:20px 20px 0;
+        .el-checkbox{
+          width: 25%;
+          margin:0;
+          padding-bottom: 20px;
+          /deep/ .el-checkbox__label{
+
+            font-size: 14px;
+            color: rgba(0,0,0,0.85);
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
